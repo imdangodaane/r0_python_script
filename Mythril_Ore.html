@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ragnarok: Project Zero Control Panel: Viewing Item (Mythril Ore)</title>
+	<script src="/cdn-cgi/apps/head/k38-oBBSLXkiPINaQjejlwmJxEY.js"></script><link href="/themes/origins/css/bootstrap.min.css?v=3.3.7" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/bootstrap-datetimepicker.min.css?v=4.17.47" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/forest.css?v=2018091401" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/fa-all.min.css?v=5.8.1" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/rpg-awesome.min.css?v=0.0.2" rel="stylesheet" type="text/css">
+	<style>
+		/* Override some RPG-Awesome properties to make it play nicer with Font-Awesome */
+		.ra-fw {
+			width: 1.25em;
+		}
+		.ra {
+			display: inline-block;
+			vertical-align: text-bottom;
+			padding-bottom: 0.05em;
+		}
+	</style>
+	<!--[if IE]>
+		<link rel="stylesheet" href="/themes/origins/css/flux/ie.css" type="text/css" media="screen" title=""/>
+	<![endif]-->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/main/">
+				<img src="/themes/origins/img/brandicon.png" alt="Ragnarok: Project Zero Control Panel"/>
+				<span class="visible-xs-inline-block">Ragnarok: Project Zero Control Panel</span>
+			</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+										<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ragnarok: Project Zero <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/main/">
+								<span class="far fa-home fa-fw menubar-icon"></span>
+								CP Home
+							</a>
+						</li>
+											<li>
+							<a href="https://playragnarokzero.com">
+								<span class="far fa-globe fa-fw menubar-icon"></span>
+								Ragnarok: Project Zero Home
+							</a>
+						</li>
+											<li>
+							<a href="https://forum.playragnarokzero.com">
+								<span class="far fa-comments fa-fw menubar-icon"></span>
+								Forums
+							</a>
+						</li>
+											<li>
+							<a href="https://wiki.playragnarokzero.com">
+								<span class="far fa-books fa-fw menubar-icon"></span>
+								Wiki
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Master Account <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/masteraccount/register/">
+								<span class="far fa-cabinet-filing fa-fw menubar-icon"></span>
+								Register
+							</a>
+						</li>
+											<li>
+							<a href="/account/login/">
+								<span class="far fa-sign-in fa-fw menubar-icon"></span>
+								Login
+							</a>
+						</li>
+											<li>
+							<a href="/masteraccount/resetpassword/">
+								<span class="far fa-key fa-fw menubar-icon"></span>
+								Reset Password
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/server/info/">
+								<span class="far fa-info fa-fw menubar-icon"></span>
+								Server Info
+							</a>
+						</li>
+											<li>
+							<a href="/woe/">
+								<span class="far fa-calendar-alt fa-fw menubar-icon"></span>
+								WoE Hours
+							</a>
+						</li>
+											<li>
+							<a href="/woe/castles/">
+								<span class="far fa-chess-rook fa-fw menubar-icon"></span>
+								Castles
+							</a>
+						</li>
+											<li>
+							<a href="/market/">
+								<span class="far fa-store fa-fw menubar-icon"></span>
+								Market
+							</a>
+						</li>
+											<li>
+							<a href="/market/vending/">
+								<span class="far fa-cart-arrow-down fa-fw menubar-icon"></span>
+								Vending Items
+							</a>
+						</li>
+											<li>
+							<a href="/market/buying/">
+								<span class="far fa-coins fa-fw menubar-icon"></span>
+								Buying Items
+							</a>
+						</li>
+											<li>
+							<a href="/character/mapstats/">
+								<span class="far fa-analytics fa-fw menubar-icon"></span>
+								Map Statistics
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/item/">
+								<span class="far fa-gem fa-fw menubar-icon"></span>
+								Item Database
+							</a>
+						</li>
+											<li>
+							<a href="/monster/">
+								<span class="far fa-frog fa-fw menubar-icon"></span>
+								Mob Database
+							</a>
+						</li>
+										</ul>
+				</li>
+									</ul>
+								</div><!--/.nav-collapse-->
+	</div><!--/.container-->
+</nav>
+
+<div class="container-fluid pagewrapper">
+<div class="row">
+	<div class="hidden-xs hidden-sm col-md-3 col-lg-2 box"><div class="sidebar">
+	<h3 class="titlebar">Menu</h3>
+	<ul class="nav-sidebar">
+						<li class="header">Ragnarok: Project Zero</li>
+				<li>
+			<a href="/main/">
+				<span class="far fa-home fa-fw sidebar-icon"></span>
+				CP Home
+			</a>
+		</li>
+				<li>
+			<a href="https://playragnarokzero.com">
+				<span class="far fa-globe fa-fw sidebar-icon"></span>
+				Ragnarok: Project Zero Home
+			</a>
+		</li>
+				<li>
+			<a href="https://forum.playragnarokzero.com">
+				<span class="far fa-comments fa-fw sidebar-icon"></span>
+				Forums
+			</a>
+		</li>
+				<li>
+			<a href="https://wiki.playragnarokzero.com">
+				<span class="far fa-books fa-fw sidebar-icon"></span>
+				Wiki
+			</a>
+		</li>
+					<li class="header">Master Account</li>
+				<li>
+			<a href="/masteraccount/register/">
+				<span class="far fa-cabinet-filing fa-fw sidebar-icon"></span>
+				Register
+			</a>
+		</li>
+				<li>
+			<a href="/account/login/">
+				<span class="far fa-sign-in fa-fw sidebar-icon"></span>
+				Login
+			</a>
+		</li>
+				<li>
+			<a href="/masteraccount/resetpassword/">
+				<span class="far fa-key fa-fw sidebar-icon"></span>
+				Reset Password
+			</a>
+		</li>
+					<li class="header">Information</li>
+				<li>
+			<a href="/server/info/">
+				<span class="far fa-info fa-fw sidebar-icon"></span>
+				Server Info
+			</a>
+		</li>
+				<li>
+			<a href="/woe/">
+				<span class="far fa-calendar-alt fa-fw sidebar-icon"></span>
+				WoE Hours
+			</a>
+		</li>
+				<li>
+			<a href="/woe/castles/">
+				<span class="far fa-chess-rook fa-fw sidebar-icon"></span>
+				Castles
+			</a>
+		</li>
+				<li>
+			<a href="/market/">
+				<span class="far fa-store fa-fw sidebar-icon"></span>
+				Market
+			</a>
+		</li>
+				<li>
+			<a href="/market/vending/">
+				<span class="far fa-cart-arrow-down fa-fw sidebar-icon"></span>
+				Vending Items
+			</a>
+		</li>
+				<li>
+			<a href="/market/buying/">
+				<span class="far fa-coins fa-fw sidebar-icon"></span>
+				Buying Items
+			</a>
+		</li>
+				<li>
+			<a href="/character/mapstats/">
+				<span class="far fa-analytics fa-fw sidebar-icon"></span>
+				Map Statistics
+			</a>
+		</li>
+					<li class="header">Database</li>
+				<li>
+			<a href="/item/">
+				<span class="far fa-gem fa-fw sidebar-icon"></span>
+				Item Database
+			</a>
+		</li>
+				<li>
+			<a href="/monster/">
+				<span class="far fa-frog fa-fw sidebar-icon"></span>
+				Mob Database
+			</a>
+		</li>
+				</ul>
+</div></div><!--/.sidebar-->
+
+	<!-- Login box / User information -->
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-10 box"><div class="main">
+		<div class="page-header">
+			<h1>
+							Viewing Item (Mythril Ore) <small>Ragnarok: Project Zero Control Panel</small>
+						</h1>
+			<!-- Sub menu -->
+				<ul class="nav nav-tabs nav-justified" id="submenu">
+	<li class="active">
+						<a href="#">Viewing Item (Mythril Ore)</a>
+					</li><li>
+						<a href="/item/">Item List</a>
+					</li>	</ul>
+		</div><!--/.page-header-->
+
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Basic Info</h3>
+			</div>
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<td>
+												<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADOElEQVRIibWVW2gTWxSGvxzEWwOpxzRNtdL0tJJ6b6UGhCkYQakQbYoXrGh90CcVQVD0xbuIghgo4pOCoKCIYtWCinCQcwJHDlJfrI44MdFaOzGRNDpRiy3jQzu7mcm01gf/YWBmrTX/v/6192YcOjq/E3+MpyjSGtIjrSGd4Stz96R+fO26cXXmGM1BpDUkEj5vKc2nL4pc287tDGoqWm4yAAdv3nD8kkCkNaT7vKWm2LKGKrpiORLZr2w+dJbI1hBGzbNYdlShcY0I4NG/MVLvVXyuKWQ6Tppy86tcANiNzeRg96qwXl3pZlBTAch3kT8igFv7t4lnw8Ekt5f+tGpyUuBgy769gjihJhn8nKM8uNrWVUJN8iyWJdjgZ9eZE8x2fRWNGjUT8rs/ev4U03w1NJ++SCYho8gyb+5cKyDOJGS+l80BNUmwwc+8pi0oskx5cDWDn6+RSgyI2gIHmYQsyKNXL9iSK7IMgJabLMgNdOc0pJWScDEh/+OH7R1U1lQD/JQcwFn0jf+jUf50uwG4f+EKk9w+Fs6ciGtTCO5ZBF5GH9Pz9JF4n1XkBCAuK0C7iMdlRdQ9f9jO3BVhIQLwz+PXVNTNRzhYHwjqZbhIfRnAVepllnNkZ3VrDv7q7uRd7wsR61GTJmcBSaLr9mUcRU760yrJNGYBA56S4oKxALz+NtV26xo4vOMAvR+zLKmbR39OM+V+etBm6Bre2TVILduBoa2Zj3hqpMfiIlO/hQIfUn180gbo1kZOfMWajawIh4bXwQyDvPfj0EGbWjIXgEC4kWy6D7CMyCj8kAIFqK50U87Q7lJfyaZurd8sqqkoyAkBo8gKJZ5GabuEtFJCiadNhPVLlzPTsh7G4mfTfWzYs9cBwyOKxjrFTDwlxeI2MMORobrSjRU9ahJ/rQd/rUeQB8KNhQ6Mzsqmu2ydXH/QZRtf3rjA9F5bX8bxI+dNDQuBaKzTIbFYX2RLNdKEgSf//c00Zz91Uj2X2y4BcLfjrYkcbH446wNB3epktDWy5q3ktgKGiDXW1NzC7VtXbcntiMcUsIo0NbcA4K/1mGr27Do2JvmYAgakqsU6QOTcoV8mB/gB9QlwrmM64K0AAAAASUVORK5CYII=" alt="25429"/>
+												Mythril Ore					</td>
+				</tr>
+				<tr>
+					<th>Item ID</th>
+					<td>
+						25429
+						-
+						<code><span class="far fa-tag" aria-hidden="true"></span> Mythril_Ore</code>
+					</td>
+				</tr>
+				<tr>
+					<th>Type</th>
+					<td>Etc</td>
+				</tr>
+			</table>
+			<div class="panel-body">
+												<div class="media-left">
+					<img class="media-object" src="/data/images/items/collection/25429.png" alt="25429" />
+				</div>
+								<div class="media-body">
+											A gemstone containing a precious mineral called Mythril.<br />
+<span style="color: #ffffff">_</span> <br />
+Weight : <span style="color: #777777">1</span><br />
+
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Details</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Weight</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>NPC Buy</th>
+					<td>20 z</td>
+				</tr>
+				<tr>
+					<th>NPC Sell</th>
+					<td>
+											10 z
+										</td>
+				</tr>
+				<tr>
+					<th>Refineable</th>
+					<td>
+													<span class="text-danger far fa-times fa-fw" data-toggle="tooltip" title="No" aria-hidden="true"></span>
+							<span class="sr-only">No</span>
+											</td>
+				</tr>
+				<tr>
+					<th>Equip Locations</th>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Stats</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Range</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Defense</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>0</td>
+				</tr>
+								<tr>
+					<th>Magical Attack</th>
+					<td>0</td>
+				</tr>
+								<tr>
+					<th>Weapon Level</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Slots</th>
+					<td>0</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Restrictions</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Level Range</th>
+					<td>
+													<span class="not-applicable">Any</span>
+											</td>
+				</tr>
+				<tr>
+					<th>Usage</th>
+					<td>
+											<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Trade</th>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Job Class Types</th>
+					<td>
+																Normal / Upper / Baby
+										</td>
+				</tr>
+				<tr>
+					<th>Job Classes</th>
+					<td>
+																All Jobs
+										</td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+											<span class="not-applicable">Any</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Scripts</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Use Script</th>
+				</tr>
+				<tr>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Equip Script</th>
+				</tr>
+				<tr>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Unequip Script</th>
+				</tr>
+				<tr>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Dropped by</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>ID</th>
+					<th>Monster</th>
+					<th>Chance</th>
+					<th>Level</th>
+					<th>Race</th>
+					<th>Element</th>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3953" class="link-to-monster">3953</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3953" class="link-to-monster">Dark Orc Hero</a>
+					</td>
+					<td>
+						<strong>100%</strong>
+											</td>
+					<td>73</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3954" class="link-to-monster">3954</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3954" class="link-to-monster">Dark Orc Lord</a>
+					</td>
+					<td>
+						<strong>100%</strong>
+											</td>
+					<td>75</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3968" class="link-to-monster">3968</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3968" class="link-to-monster">Desert Phreeoni</a>
+					</td>
+					<td>
+						<strong>100%</strong>
+											</td>
+					<td>71</td>
+					<td>Brute</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3953" class="link-to-monster">3953</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3953" class="link-to-monster">Dark Orc Hero</a>
+					</td>
+					<td>
+						<strong>60%</strong>
+											</td>
+					<td>73</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3954" class="link-to-monster">3954</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3954" class="link-to-monster">Dark Orc Lord</a>
+					</td>
+					<td>
+						<strong>60%</strong>
+											</td>
+					<td>75</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3968" class="link-to-monster">3968</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3968" class="link-to-monster">Desert Phreeoni</a>
+					</td>
+					<td>
+						<strong>60%</strong>
+											</td>
+					<td>71</td>
+					<td>Brute</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3951" class="link-to-monster">3951</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3951" class="link-to-monster">Dark High Orc</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>72</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20102" class="link-to-monster">20102</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20102" class="link-to-monster">Dark Mandragora</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>39</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3952" class="link-to-monster">3952</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3952" class="link-to-monster">Dark Orc Archer</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>69</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3950" class="link-to-monster">3950</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3950" class="link-to-monster">Dark Orc Baby</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>63</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3949" class="link-to-monster">3949</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3949" class="link-to-monster">Dark Orc Lady</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>67</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3948" class="link-to-monster">3948</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3948" class="link-to-monster">Dark Orc Warrior</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>68</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20104" class="link-to-monster">20104</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20104" class="link-to-monster">Dark Spore</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>44</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20103" class="link-to-monster">20103</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20103" class="link-to-monster">Dark Stem Worm</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>43</td>
+					<td>Plant</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20101" class="link-to-monster">20101</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20101" class="link-to-monster">Dark Willow</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>38</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3965" class="link-to-monster">3965</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3965" class="link-to-monster">Desert Frilldora</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>69</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3967" class="link-to-monster">3967</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3967" class="link-to-monster">Desert Hode</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>65</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3966" class="link-to-monster">3966</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3966" class="link-to-monster">Desert Sandman</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>71</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20166" class="link-to-monster">20166</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20166" class="link-to-monster">Flame Ghost</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>107</td>
+					<td>Demon</td>
+					<td>
+						<em>Fire</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20167" class="link-to-monster">20167</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20167" class="link-to-monster">Ice Ghost</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>105</td>
+					<td>Demon</td>
+					<td>
+						<em>Water</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20174" class="link-to-monster">20174</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20174" class="link-to-monster">Prison Breaker</a>
+					</td>
+					<td>
+						<strong>0.05%</strong>
+											</td>
+					<td>109</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20170" class="link-to-monster">20170</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20170" class="link-to-monster">Contaminated Gargoyle</a>
+					</td>
+					<td>
+						<strong>0.03%</strong>
+											</td>
+					<td>105</td>
+					<td>Demon</td>
+					<td>
+						<em>Water</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20172" class="link-to-monster">20172</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20172" class="link-to-monster">Contaminated Raydric</a>
+					</td>
+					<td>
+						<strong>0.03%</strong>
+											</td>
+					<td>120</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Dark</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20173" class="link-to-monster">20173</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20173" class="link-to-monster">Contaminated Raydric Ar</a>
+					</td>
+					<td>
+						<strong>0.03%</strong>
+											</td>
+					<td>105</td>
+					<td>Demon</td>
+					<td>
+						<em>Dark</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20171" class="link-to-monster">20171</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20171" class="link-to-monster">Contaminated Sting</a>
+					</td>
+					<td>
+						<strong>0.03%</strong>
+											</td>
+					<td>109</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+</div>
+
+	</div></div><!--/.main-->
+</div><!--/.row-->
+</div><!--/.container-->
+
+<footer class="footer">
+	<div class="container">
+			<div class="row">
+			<p>
+				<a href="https://playragnarokzero.com/tos">Terms of Service</a> - <a href="https://playragnarokzero.com/privacy-policy">Privacy Policy</a> - <a href="https://playragnarokzero.com/cookie-policy">Cookie Policy</a> - <a href="https://playragnarokzero.com/refund-policy">Refund Policy</a> - <a href="https://playragnarokzero.com/contact-us">Contact us</a>
+			</p>
+			<!--
+			<p class="text-muted">
+				<strong>Ragnarok: Project Zero Control Panel</strong>
+				&mdash; Copyright &copy; 2020 Ragnarok: Project Zero
+				&mdash; Based on <a href="https://github.com/HerculesWS/FluxCP">FluxCP</a> for <a href="https://github.com/HerculesWS/Hercules">Hercules</a>.<br/>
+			</p>-->
+		</div>
+	</footer>
+
+<script type="text/javascript" src="/themes/origins/js/jquery.min.js?v=3.2.1"></script>
+<script type="text/javascript" src="/themes/origins/js/bootstrap.min.js?v=3.3.7"></script>
+<script type="text/javascript" src="/themes/origins/js/moment.min.js?v=2.17.1"></script>
+<script type="text/javascript" src="/themes/origins/js/bootstrap-datetimepicker.min.js?v=4.17.47"></script>
+<script type="text/javascript" src="/themes/origins/js/originsrocp.js?v=20170115"></script>
+<script type="text/javascript">
+//<![CDATA[
+	function reload(){
+		window.location.href = '/item/view/';
+	}
+	function updatePreferredServer(sel){
+		var preferred = sel.options[sel.selectedIndex].value;
+		document.preferred_server_form.preferred_server.value = preferred;
+		document.preferred_server_form.submit();
+	}
+
+	function toggleSearchForm()
+	{
+		//$('.search-form').toggle();
+		$('.search-form').slideToggle('fast');
+		$('.searchform-toggle').toggleClass('active');
+	}
+	$(function() {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ragnarok: Project Zero Control Panel: Viewing Item (Oak Stunner)</title>
+	<script src="/cdn-cgi/apps/head/k38-oBBSLXkiPINaQjejlwmJxEY.js"></script><link href="/themes/origins/css/bootstrap.min.css?v=3.3.7" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/bootstrap-datetimepicker.min.css?v=4.17.47" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/forest.css?v=2018091401" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/fa-all.min.css?v=5.8.1" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/rpg-awesome.min.css?v=0.0.2" rel="stylesheet" type="text/css">
+	<style>
+		/* Override some RPG-Awesome properties to make it play nicer with Font-Awesome */
+		.ra-fw {
+			width: 1.25em;
+		}
+		.ra {
+			display: inline-block;
+			vertical-align: text-bottom;
+			padding-bottom: 0.05em;
+		}
+	</style>
+	<!--[if IE]>
+		<link rel="stylesheet" href="/themes/origins/css/flux/ie.css" type="text/css" media="screen" title=""/>
+	<![endif]-->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/main/">
+				<img src="/themes/origins/img/brandicon.png" alt="Ragnarok: Project Zero Control Panel"/>
+				<span class="visible-xs-inline-block">Ragnarok: Project Zero Control Panel</span>
+			</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+										<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ragnarok: Project Zero <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/main/">
+								<span class="far fa-home fa-fw menubar-icon"></span>
+								CP Home
+							</a>
+						</li>
+											<li>
+							<a href="https://playragnarokzero.com">
+								<span class="far fa-globe fa-fw menubar-icon"></span>
+								Ragnarok: Project Zero Home
+							</a>
+						</li>
+											<li>
+							<a href="https://forum.playragnarokzero.com">
+								<span class="far fa-comments fa-fw menubar-icon"></span>
+								Forums
+							</a>
+						</li>
+											<li>
+							<a href="https://wiki.playragnarokzero.com">
+								<span class="far fa-books fa-fw menubar-icon"></span>
+								Wiki
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Master Account <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/masteraccount/register/">
+								<span class="far fa-cabinet-filing fa-fw menubar-icon"></span>
+								Register
+							</a>
+						</li>
+											<li>
+							<a href="/account/login/">
+								<span class="far fa-sign-in fa-fw menubar-icon"></span>
+								Login
+							</a>
+						</li>
+											<li>
+							<a href="/masteraccount/resetpassword/">
+								<span class="far fa-key fa-fw menubar-icon"></span>
+								Reset Password
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/server/info/">
+								<span class="far fa-info fa-fw menubar-icon"></span>
+								Server Info
+							</a>
+						</li>
+											<li>
+							<a href="/woe/">
+								<span class="far fa-calendar-alt fa-fw menubar-icon"></span>
+								WoE Hours
+							</a>
+						</li>
+											<li>
+							<a href="/woe/castles/">
+								<span class="far fa-chess-rook fa-fw menubar-icon"></span>
+								Castles
+							</a>
+						</li>
+											<li>
+							<a href="/market/">
+								<span class="far fa-store fa-fw menubar-icon"></span>
+								Market
+							</a>
+						</li>
+											<li>
+							<a href="/market/vending/">
+								<span class="far fa-cart-arrow-down fa-fw menubar-icon"></span>
+								Vending Items
+							</a>
+						</li>
+											<li>
+							<a href="/market/buying/">
+								<span class="far fa-coins fa-fw menubar-icon"></span>
+								Buying Items
+							</a>
+						</li>
+											<li>
+							<a href="/character/mapstats/">
+								<span class="far fa-analytics fa-fw menubar-icon"></span>
+								Map Statistics
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/item/">
+								<span class="far fa-gem fa-fw menubar-icon"></span>
+								Item Database
+							</a>
+						</li>
+											<li>
+							<a href="/monster/">
+								<span class="far fa-frog fa-fw menubar-icon"></span>
+								Mob Database
+							</a>
+						</li>
+										</ul>
+				</li>
+									</ul>
+								</div><!--/.nav-collapse-->
+	</div><!--/.container-->
+</nav>
+
+<div class="container-fluid pagewrapper">
+<div class="row">
+	<div class="hidden-xs hidden-sm col-md-3 col-lg-2 box"><div class="sidebar">
+	<h3 class="titlebar">Menu</h3>
+	<ul class="nav-sidebar">
+						<li class="header">Ragnarok: Project Zero</li>
+				<li>
+			<a href="/main/">
+				<span class="far fa-home fa-fw sidebar-icon"></span>
+				CP Home
+			</a>
+		</li>
+				<li>
+			<a href="https://playragnarokzero.com">
+				<span class="far fa-globe fa-fw sidebar-icon"></span>
+				Ragnarok: Project Zero Home
+			</a>
+		</li>
+				<li>
+			<a href="https://forum.playragnarokzero.com">
+				<span class="far fa-comments fa-fw sidebar-icon"></span>
+				Forums
+			</a>
+		</li>
+				<li>
+			<a href="https://wiki.playragnarokzero.com">
+				<span class="far fa-books fa-fw sidebar-icon"></span>
+				Wiki
+			</a>
+		</li>
+					<li class="header">Master Account</li>
+				<li>
+			<a href="/masteraccount/register/">
+				<span class="far fa-cabinet-filing fa-fw sidebar-icon"></span>
+				Register
+			</a>
+		</li>
+				<li>
+			<a href="/account/login/">
+				<span class="far fa-sign-in fa-fw sidebar-icon"></span>
+				Login
+			</a>
+		</li>
+				<li>
+			<a href="/masteraccount/resetpassword/">
+				<span class="far fa-key fa-fw sidebar-icon"></span>
+				Reset Password
+			</a>
+		</li>
+					<li class="header">Information</li>
+				<li>
+			<a href="/server/info/">
+				<span class="far fa-info fa-fw sidebar-icon"></span>
+				Server Info
+			</a>
+		</li>
+				<li>
+			<a href="/woe/">
+				<span class="far fa-calendar-alt fa-fw sidebar-icon"></span>
+				WoE Hours
+			</a>
+		</li>
+				<li>
+			<a href="/woe/castles/">
+				<span class="far fa-chess-rook fa-fw sidebar-icon"></span>
+				Castles
+			</a>
+		</li>
+				<li>
+			<a href="/market/">
+				<span class="far fa-store fa-fw sidebar-icon"></span>
+				Market
+			</a>
+		</li>
+				<li>
+			<a href="/market/vending/">
+				<span class="far fa-cart-arrow-down fa-fw sidebar-icon"></span>
+				Vending Items
+			</a>
+		</li>
+				<li>
+			<a href="/market/buying/">
+				<span class="far fa-coins fa-fw sidebar-icon"></span>
+				Buying Items
+			</a>
+		</li>
+				<li>
+			<a href="/character/mapstats/">
+				<span class="far fa-analytics fa-fw sidebar-icon"></span>
+				Map Statistics
+			</a>
+		</li>
+					<li class="header">Database</li>
+				<li>
+			<a href="/item/">
+				<span class="far fa-gem fa-fw sidebar-icon"></span>
+				Item Database
+			</a>
+		</li>
+				<li>
+			<a href="/monster/">
+				<span class="far fa-frog fa-fw sidebar-icon"></span>
+				Mob Database
+			</a>
+		</li>
+				</ul>
+</div></div><!--/.sidebar-->
+
+	<!-- Login box / User information -->
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-10 box"><div class="main">
+		<div class="page-header">
+			<h1>
+							Viewing Item (Oak Stunner) <small>Ragnarok: Project Zero Control Panel</small>
+						</h1>
+			<!-- Sub menu -->
+				<ul class="nav nav-tabs nav-justified" id="submenu">
+	<li class="active">
+						<a href="#">Viewing Item (Oak Stunner)</a>
+					</li><li>
+						<a href="/item/">Item List</a>
+					</li>	</ul>
+		</div><!--/.page-header-->
+
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Basic Info</h3>
+			</div>
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<td>
+												<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACG0lEQVRIib2VMWgTURjHfydFBEGCJEty8ciQIhUxQjuotFADpm0wVFyaQjNIAqaDgiW0OjgIoYUYwSEgZMvQ4CbJIkgtGGIqTdtAS0GLUunFoZdQKbh0eU4Ri1760hj/3/bu7v3e/7vv+54iEHRSJzq6+/8AdDV7WIlPCFW1HVp7uHCSdGZOkQWYOqjEJ4QnOIquG1g1B9b+a1hD48x6D4iEZqR/nClAVW3UCkU8wVHyL99QKxQBsGoO2b3NAfnokLD0XODs9UFqhSI3YxFKS5vUMvMAzHoP2gNsVffp6r1E2Bk4tKbrBrWvVXTdaA8AcEfp41bUB0A+kQZgRzfQdYPUR/k0KWaN9ixwVXz69h0Af985nKqNtx8+A1B33WZ3z5CqJlMHbscZuu0Wuu0WnKqNHd3gVP89Bh9n2d2TT5GpA4BIaEZcvujBrtrR3BqaSyP5JIlDdTAZG5PqhaaA3yFr6xX8wyNobo3SYom19Up7KWoonZlTqnoV//AIAzcGALCrdpnDA0eMiobiz6eUoY3xX1aXl5blx4VoIXzeoHh0/6lYLW+LVCIrZL5paZq+XphXVjZWKC2WCJ7/IjeTWnHQiGTgishFfWK1vC3CoemmTo51HzzIvVdyPzxoLg2guZPjOGhEKpEV9boQ4dC0qROpKjLTZGxMeaW+E4HTFbaq+39958hGk9Hd3h4B8KK8+Ufp/hNAM3X80v8Jbn059jH3rT8AAAAASUVORK5CYII=" alt="16079"/>
+												Oak Stunner[1]					</td>
+				</tr>
+				<tr>
+					<th>Item ID</th>
+					<td>
+						16079
+						-
+						<code><span class="far fa-tag" aria-hidden="true"></span> Oak_Stunner</code>
+					</td>
+				</tr>
+				<tr>
+					<th>Type</th>
+					<td>Weapon - Mace</td>
+				</tr>
+			</table>
+			<div class="panel-body">
+												<div class="media-left">
+					<img class="media-object" src="/data/images/items/collection/16079.png" alt="16079" />
+				</div>
+								<div class="media-body">
+											Divine oil was applied to the end of a dreadful blunt that made the stars visible.<br />
+HIT + 5, Indestructible, Increases attack speed (decreases delay after attack by 5%).<br />
+Increases physical damage against undead monsters by 10%.<br />
+If refine rate is 7 or higher, ASPD + 1, HIT + 5, Increases physical damage against undead monsters by 10%.<br />
+Class : <span style="color: #777777">Mace</span> Attack : <span style="color: #777777">95</span><br />
+Weight : <span style="color: #777777">70</span><br />
+Weapon Level : <span style="color: #777777">2</span><br />
+Required Level : <span style="color: #777777">25</span><br />
+Usable Jobs : <span style="color: #777777">Acolyte classes, Merchant classes</span><br />
+
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Details</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Weight</th>
+					<td>70</td>
+				</tr>
+				<tr>
+					<th>NPC Buy</th>
+					<td>20 z</td>
+				</tr>
+				<tr>
+					<th>NPC Sell</th>
+					<td>
+											10 z
+										</td>
+				</tr>
+				<tr>
+					<th>Refineable</th>
+					<td>
+													<span class="text-success far fa-check fa-fw" data-toggle="tooltip" title="Yes" aria-hidden="true"></span>
+							<span class="sr-only">Yes</span>
+											</td>
+				</tr>
+				<tr>
+					<th>Equip Locations</th>
+					<td>
+																Main Hand
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Stats</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Range</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Defense</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>95</td>
+				</tr>
+								<tr>
+					<th>Magical Attack</th>
+					<td>0</td>
+				</tr>
+								<tr>
+					<th>Weapon Level</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Slots</th>
+					<td>1</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Restrictions</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Level Range</th>
+					<td>
+													25
+														+
+																		</td>
+				</tr>
+				<tr>
+					<th>Usage</th>
+					<td>
+											<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Trade</th>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Job Class Types</th>
+					<td>
+																Normal / Upper / Baby
+										</td>
+				</tr>
+				<tr>
+					<th>Job Classes</th>
+					<td>
+																Acolyte / Merchant / Priest / Blacksmith / Monk / Alchemist
+										</td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+											<span class="not-applicable">Any</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Scripts</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Use Script</th>
+				</tr>
+				<tr>
+					<td>
+																<pre>bonus(bHit, 5);
+ bonus(bUnbreakableWeapon, 0);
+ bonus(bAspdRate, 5);
+ bonus2(bAddRace, RC_Undead, 10);
+ if (getrefine() &gt;= 7) {
+ bonus(bAspd, 1);
+ bonus(bHit, 5);
+ bonus2(bAddRace, RC_Undead, 10);
+ }</pre>
+										</td>
+				</tr>
+				<tr>
+					<th>Equip Script</th>
+				</tr>
+				<tr>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Unequip Script</th>
+				</tr>
+				<tr>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Dropped by</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>ID</th>
+					<th>Monster</th>
+					<th>Chance</th>
+					<th>Level</th>
+					<th>Race</th>
+					<th>Element</th>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20101" class="link-to-monster">20101</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20101" class="link-to-monster">Dark Willow</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>38</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+</div>
+
+	</div></div><!--/.main-->
+</div><!--/.row-->
+</div><!--/.container-->
+
+<footer class="footer">
+	<div class="container">
+			<div class="row">
+			<p>
+				<a href="https://playragnarokzero.com/tos">Terms of Service</a> - <a href="https://playragnarokzero.com/privacy-policy">Privacy Policy</a> - <a href="https://playragnarokzero.com/cookie-policy">Cookie Policy</a> - <a href="https://playragnarokzero.com/refund-policy">Refund Policy</a> - <a href="https://playragnarokzero.com/contact-us">Contact us</a>
+			</p>
+			<!--
+			<p class="text-muted">
+				<strong>Ragnarok: Project Zero Control Panel</strong>
+				&mdash; Copyright &copy; 2020 Ragnarok: Project Zero
+				&mdash; Based on <a href="https://github.com/HerculesWS/FluxCP">FluxCP</a> for <a href="https://github.com/HerculesWS/Hercules">Hercules</a>.<br/>
+			</p>-->
+		</div>
+	</footer>
+
+<script type="text/javascript" src="/themes/origins/js/jquery.min.js?v=3.2.1"></script>
+<script type="text/javascript" src="/themes/origins/js/bootstrap.min.js?v=3.3.7"></script>
+<script type="text/javascript" src="/themes/origins/js/moment.min.js?v=2.17.1"></script>
+<script type="text/javascript" src="/themes/origins/js/bootstrap-datetimepicker.min.js?v=4.17.47"></script>
+<script type="text/javascript" src="/themes/origins/js/originsrocp.js?v=20170115"></script>
+<script type="text/javascript">
+//<![CDATA[
+	function reload(){
+		window.location.href = '/item/view/';
+	}
+	function updatePreferredServer(sel){
+		var preferred = sel.options[sel.selectedIndex].value;
+		document.preferred_server_form.preferred_server.value = preferred;
+		document.preferred_server_form.submit();
+	}
+
+	function toggleSearchForm()
+	{
+		//$('.search-form').toggle();
+		$('.search-form').slideToggle('fast');
+		$('.searchform-toggle').toggleClass('active');
+	}
+	$(function() {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+//]]>
+</script>
+</body>
+</html>

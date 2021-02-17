@@ -1,0 +1,3177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ragnarok: Project Zero Control Panel: Viewing Item (Blacksmith&#039;s Blessing Shard)</title>
+	<script src="/cdn-cgi/apps/head/k38-oBBSLXkiPINaQjejlwmJxEY.js"></script><link href="/themes/origins/css/bootstrap.min.css?v=3.3.7" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/bootstrap-datetimepicker.min.css?v=4.17.47" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/forest.css?v=2018091401" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/fa-all.min.css?v=5.8.1" rel="stylesheet" type="text/css">
+	<link href="/themes/origins/css/rpg-awesome.min.css?v=0.0.2" rel="stylesheet" type="text/css">
+	<style>
+		/* Override some RPG-Awesome properties to make it play nicer with Font-Awesome */
+		.ra-fw {
+			width: 1.25em;
+		}
+		.ra {
+			display: inline-block;
+			vertical-align: text-bottom;
+			padding-bottom: 0.05em;
+		}
+	</style>
+	<!--[if IE]>
+		<link rel="stylesheet" href="/themes/origins/css/flux/ie.css" type="text/css" media="screen" title=""/>
+	<![endif]-->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/main/">
+				<img src="/themes/origins/img/brandicon.png" alt="Ragnarok: Project Zero Control Panel"/>
+				<span class="visible-xs-inline-block">Ragnarok: Project Zero Control Panel</span>
+			</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+										<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ragnarok: Project Zero <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/main/">
+								<span class="far fa-home fa-fw menubar-icon"></span>
+								CP Home
+							</a>
+						</li>
+											<li>
+							<a href="https://playragnarokzero.com">
+								<span class="far fa-globe fa-fw menubar-icon"></span>
+								Ragnarok: Project Zero Home
+							</a>
+						</li>
+											<li>
+							<a href="https://forum.playragnarokzero.com">
+								<span class="far fa-comments fa-fw menubar-icon"></span>
+								Forums
+							</a>
+						</li>
+											<li>
+							<a href="https://wiki.playragnarokzero.com">
+								<span class="far fa-books fa-fw menubar-icon"></span>
+								Wiki
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Master Account <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/masteraccount/register/">
+								<span class="far fa-cabinet-filing fa-fw menubar-icon"></span>
+								Register
+							</a>
+						</li>
+											<li>
+							<a href="/account/login/">
+								<span class="far fa-sign-in fa-fw menubar-icon"></span>
+								Login
+							</a>
+						</li>
+											<li>
+							<a href="/masteraccount/resetpassword/">
+								<span class="far fa-key fa-fw menubar-icon"></span>
+								Reset Password
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/server/info/">
+								<span class="far fa-info fa-fw menubar-icon"></span>
+								Server Info
+							</a>
+						</li>
+											<li>
+							<a href="/woe/">
+								<span class="far fa-calendar-alt fa-fw menubar-icon"></span>
+								WoE Hours
+							</a>
+						</li>
+											<li>
+							<a href="/woe/castles/">
+								<span class="far fa-chess-rook fa-fw menubar-icon"></span>
+								Castles
+							</a>
+						</li>
+											<li>
+							<a href="/market/">
+								<span class="far fa-store fa-fw menubar-icon"></span>
+								Market
+							</a>
+						</li>
+											<li>
+							<a href="/market/vending/">
+								<span class="far fa-cart-arrow-down fa-fw menubar-icon"></span>
+								Vending Items
+							</a>
+						</li>
+											<li>
+							<a href="/market/buying/">
+								<span class="far fa-coins fa-fw menubar-icon"></span>
+								Buying Items
+							</a>
+						</li>
+											<li>
+							<a href="/character/mapstats/">
+								<span class="far fa-analytics fa-fw menubar-icon"></span>
+								Map Statistics
+							</a>
+						</li>
+										</ul>
+				</li>
+													<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+											<li>
+							<a href="/item/">
+								<span class="far fa-gem fa-fw menubar-icon"></span>
+								Item Database
+							</a>
+						</li>
+											<li>
+							<a href="/monster/">
+								<span class="far fa-frog fa-fw menubar-icon"></span>
+								Mob Database
+							</a>
+						</li>
+										</ul>
+				</li>
+									</ul>
+								</div><!--/.nav-collapse-->
+	</div><!--/.container-->
+</nav>
+
+<div class="container-fluid pagewrapper">
+<div class="row">
+	<div class="hidden-xs hidden-sm col-md-3 col-lg-2 box"><div class="sidebar">
+	<h3 class="titlebar">Menu</h3>
+	<ul class="nav-sidebar">
+						<li class="header">Ragnarok: Project Zero</li>
+				<li>
+			<a href="/main/">
+				<span class="far fa-home fa-fw sidebar-icon"></span>
+				CP Home
+			</a>
+		</li>
+				<li>
+			<a href="https://playragnarokzero.com">
+				<span class="far fa-globe fa-fw sidebar-icon"></span>
+				Ragnarok: Project Zero Home
+			</a>
+		</li>
+				<li>
+			<a href="https://forum.playragnarokzero.com">
+				<span class="far fa-comments fa-fw sidebar-icon"></span>
+				Forums
+			</a>
+		</li>
+				<li>
+			<a href="https://wiki.playragnarokzero.com">
+				<span class="far fa-books fa-fw sidebar-icon"></span>
+				Wiki
+			</a>
+		</li>
+					<li class="header">Master Account</li>
+				<li>
+			<a href="/masteraccount/register/">
+				<span class="far fa-cabinet-filing fa-fw sidebar-icon"></span>
+				Register
+			</a>
+		</li>
+				<li>
+			<a href="/account/login/">
+				<span class="far fa-sign-in fa-fw sidebar-icon"></span>
+				Login
+			</a>
+		</li>
+				<li>
+			<a href="/masteraccount/resetpassword/">
+				<span class="far fa-key fa-fw sidebar-icon"></span>
+				Reset Password
+			</a>
+		</li>
+					<li class="header">Information</li>
+				<li>
+			<a href="/server/info/">
+				<span class="far fa-info fa-fw sidebar-icon"></span>
+				Server Info
+			</a>
+		</li>
+				<li>
+			<a href="/woe/">
+				<span class="far fa-calendar-alt fa-fw sidebar-icon"></span>
+				WoE Hours
+			</a>
+		</li>
+				<li>
+			<a href="/woe/castles/">
+				<span class="far fa-chess-rook fa-fw sidebar-icon"></span>
+				Castles
+			</a>
+		</li>
+				<li>
+			<a href="/market/">
+				<span class="far fa-store fa-fw sidebar-icon"></span>
+				Market
+			</a>
+		</li>
+				<li>
+			<a href="/market/vending/">
+				<span class="far fa-cart-arrow-down fa-fw sidebar-icon"></span>
+				Vending Items
+			</a>
+		</li>
+				<li>
+			<a href="/market/buying/">
+				<span class="far fa-coins fa-fw sidebar-icon"></span>
+				Buying Items
+			</a>
+		</li>
+				<li>
+			<a href="/character/mapstats/">
+				<span class="far fa-analytics fa-fw sidebar-icon"></span>
+				Map Statistics
+			</a>
+		</li>
+					<li class="header">Database</li>
+				<li>
+			<a href="/item/">
+				<span class="far fa-gem fa-fw sidebar-icon"></span>
+				Item Database
+			</a>
+		</li>
+				<li>
+			<a href="/monster/">
+				<span class="far fa-frog fa-fw sidebar-icon"></span>
+				Mob Database
+			</a>
+		</li>
+				</ul>
+</div></div><!--/.sidebar-->
+
+	<!-- Login box / User information -->
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-10 box"><div class="main">
+		<div class="page-header">
+			<h1>
+							Viewing Item (Blacksmith&#039;s Blessing Shard) <small>Ragnarok: Project Zero Control Panel</small>
+						</h1>
+			<!-- Sub menu -->
+				<ul class="nav nav-tabs nav-justified" id="submenu">
+	<li class="active">
+						<a href="#">Viewing Item (Blacksmith&#039;s Blessing Shard)</a>
+					</li><li>
+						<a href="/item/">Item List</a>
+					</li>	</ul>
+		</div><!--/.page-header-->
+
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Basic Info</h3>
+			</div>
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<td>
+												<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB80lEQVRIie2VsWvUYBjGf99d0mrDVXNaxEJdqofnYKcbHAqC/4GTg7qJdHardhKXrgrdHUoXC62ji1gEtVX0Bgu2pSpyetTmztakR2LyOpSExiZ3KXKD4DN+3/s9v/f9vodECUI3leuq+39AFmlZim4dfRIl4WHzBQAbTKgsZ1W7FM0MLcU2F7cbzLtrKISG8z0TKBUwM7QkI6MeAO8W9BikUjCZ2HwNCE1noy0kERCal7dqACz3D8ZAIeSO9QYNl1X7K7+4lwhJfeTyVg0mXZh0I9CVkU9/VAmCwuRQms1+wN6r4fRotH7igxFNEqpPmvjomMZxNG4n3nXiBJHZ5ZepnQGMH7sEQEA+tSYxpl9qw+ilKta3M3B9d61esqP9SsFkcbsBgELI4R8MAOA9PU/9YjW2tveRAR57KwgaAXl8rOyA9/llzvnlWDxDhQm6ay0QYKDw0cRLnSAxpiVjSoQcj45cZaX/GZ49EHUdat5bA3aTuWq/RZhKjGniBANoWLLD2I9pLuycAjbRc3W84CRz3jogKBQgFOVzaveQkqLn9g1VVIepEzDnrjM+PMhs6yeVgkkPDgroEYfewOaV00jtHjp8i84a90WnhSt9BOTpDRymize5Zj2g2voI0Na8IyAqYmxfUSfjAwH+Rv/+H63rgN9B/NCLQufJHgAAAABJRU5ErkJggg==" alt="1000226"/>
+												Blacksmith&#039;s Blessing Shard					</td>
+				</tr>
+				<tr>
+					<th>Item ID</th>
+					<td>
+						1000226
+						-
+						<code><span class="far fa-tag" aria-hidden="true"></span> Blacksmith_Blessing_Shard</code>
+					</td>
+				</tr>
+				<tr>
+					<th>Type</th>
+					<td>Usable</td>
+				</tr>
+			</table>
+			<div class="panel-body">
+												<div class="media-left">
+					<img class="media-object" src="/data/images/items/collection/1000226.png" alt="1000226" />
+				</div>
+								<div class="media-body">
+											This stone contains a strange energy, but it seems to be leaking.<br />
+Weight: <span style="color: #777777">0</span><br />
+
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Details</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Weight</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>NPC Buy</th>
+					<td>0 z</td>
+				</tr>
+				<tr>
+					<th>NPC Sell</th>
+					<td>
+											0 z
+										</td>
+				</tr>
+				<tr>
+					<th>Refineable</th>
+					<td>
+													<span class="text-danger far fa-times fa-fw" data-toggle="tooltip" title="No" aria-hidden="true"></span>
+							<span class="sr-only">No</span>
+											</td>
+				</tr>
+				<tr>
+					<th>Equip Locations</th>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Stats</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Range</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Defense</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Attack</th>
+					<td>0</td>
+				</tr>
+								<tr>
+					<th>Magical Attack</th>
+					<td>0</td>
+				</tr>
+								<tr>
+					<th>Weapon Level</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Slots</th>
+					<td>0</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Restrictions</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Level Range</th>
+					<td>
+													<span class="not-applicable">Any</span>
+											</td>
+				</tr>
+				<tr>
+					<th>Usage</th>
+					<td>
+											<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Trade</th>
+					<td>
+																Can&#039;t be sold to NPCs
+										</td>
+				</tr>
+				<tr>
+					<th>Job Class Types</th>
+					<td>
+																Normal / Upper / Baby
+										</td>
+				</tr>
+				<tr>
+					<th>Job Classes</th>
+					<td>
+																All Jobs
+										</td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+											<span class="not-applicable">Any</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Scripts</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>Use Script</th>
+				</tr>
+				<tr>
+					<td>
+																<pre>openlapineddukddakboxui(Blacksmith_Blessing_Shard);</pre>
+										</td>
+				</tr>
+				<tr>
+					<th>Equip Script</th>
+				</tr>
+				<tr>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+				<tr>
+					<th>Unequip Script</th>
+				</tr>
+				<tr>
+					<td>
+																<span class="not-applicable">None</span>
+										</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Dropped by</h3>
+			</div>
+			<table class="table table-compressed">
+				<tr>
+					<th>ID</th>
+					<th>Monster</th>
+					<th>Chance</th>
+					<th>Level</th>
+					<th>Race</th>
+					<th>Element</th>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2894" class="link-to-monster">2894</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2894" class="link-to-monster">Arclouze Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>107</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2889" class="link-to-monster">2889</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2889" class="link-to-monster">Assaulter Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>100</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Wind</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2884" class="link-to-monster">2884</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2884" class="link-to-monster">Bigfoot Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>29</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2653" class="link-to-monster">2653</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2653" class="link-to-monster">Boa Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>18</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2870" class="link-to-monster">2870</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2870" class="link-to-monster">Clock Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>81</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2865" class="link-to-monster">2865</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2865" class="link-to-monster">Cookie Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>35</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2845" class="link-to-monster">2845</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2845" class="link-to-monster">Drops Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>2</td>
+					<td>Plant</td>
+					<td>
+						<em>Fire</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2910" class="link-to-monster">2910</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2910" class="link-to-monster">Elusive Alarm</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>88</td>
+					<td>Formless</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2905" class="link-to-monster">2905</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2905" class="link-to-monster">Elusive Ambernite</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>19</td>
+					<td>Insect</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2891" class="link-to-monster">2891</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2891" class="link-to-monster">Elusive Argiope</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>75</td>
+					<td>Insect</td>
+					<td>
+						<em>Poison</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2877" class="link-to-monster">2877</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2877" class="link-to-monster">Elusive Carat</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>103</td>
+					<td>Demon</td>
+					<td>
+						<em>Wind</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2872" class="link-to-monster">2872</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2872" class="link-to-monster">Elusive Chonchon</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>5</td>
+					<td>Insect</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2857" class="link-to-monster">2857</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2857" class="link-to-monster">Elusive Deniro</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>31</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2852" class="link-to-monster">2852</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2852" class="link-to-monster">Elusive Disguise</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>103</td>
+					<td>Demon</td>
+					<td>
+						<em>Earth</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2847" class="link-to-monster">2847</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2847" class="link-to-monster">Elusive Drainliar</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>47</td>
+					<td>Brute</td>
+					<td>
+						<em>Dark</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2838" class="link-to-monster">2838</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2838" class="link-to-monster">Elusive Evil Druid</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>80</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2833" class="link-to-monster">2833</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2833" class="link-to-monster">Elusive Familiar</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>24</td>
+					<td>Brute</td>
+					<td>
+						<em>Dark</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2813" class="link-to-monster">2813</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2813" class="link-to-monster">Elusive Goblin</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>48</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2808" class="link-to-monster">2808</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2808" class="link-to-monster">Elusive Grove</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>55</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2798" class="link-to-monster">2798</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2798" class="link-to-monster">Elusive Hornet</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>11</td>
+					<td>Insect</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2778" class="link-to-monster">2778</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2778" class="link-to-monster">Elusive Jing Guai</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>100</td>
+					<td>Demon</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2768" class="link-to-monster">2768</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2768" class="link-to-monster">Elusive Magnolia</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>53</td>
+					<td>Demon</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2763" class="link-to-monster">2763</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2763" class="link-to-monster">Elusive Marduk</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>73</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Fire</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2793" class="link-to-monster">2793</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2793" class="link-to-monster">Elusive Mi Gao</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>107</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2753" class="link-to-monster">2753</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2753" class="link-to-monster">Elusive Mimic</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>56</td>
+					<td>Formless</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2748" class="link-to-monster">2748</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2748" class="link-to-monster">Elusive Minorous</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>58</td>
+					<td>Brute</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2723" class="link-to-monster">2723</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2723" class="link-to-monster">Elusive Orc Zombie</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>51</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2718" class="link-to-monster">2718</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2718" class="link-to-monster">Elusive Peco Peco</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>25</td>
+					<td>Brute</td>
+					<td>
+						<em>Fire</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2713" class="link-to-monster">2713</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2713" class="link-to-monster">Elusive Phen</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>52</td>
+					<td>Fish</td>
+					<td>
+						<em>Water</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2703" class="link-to-monster">2703</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2703" class="link-to-monster">Elusive Poporing</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>30</td>
+					<td>Plant</td>
+					<td>
+						<em>Poison</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2698" class="link-to-monster">2698</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2698" class="link-to-monster">Elusive Poring</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>1</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2694" class="link-to-monster">2694</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2694" class="link-to-monster">Elusive Raggler</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>48</td>
+					<td>Brute</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2670" class="link-to-monster">2670</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2670" class="link-to-monster">Elusive Scorpion</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>16</td>
+					<td>Insect</td>
+					<td>
+						<em>Fire</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2660" class="link-to-monster">2660</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2660" class="link-to-monster">Elusive Skeleton Worker</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>44</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2645" class="link-to-monster">2645</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2645" class="link-to-monster">Elusive Stainer</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>21</td>
+					<td>Insect</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2640" class="link-to-monster">2640</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2640" class="link-to-monster">Elusive Sting</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>104</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2635" class="link-to-monster">2635</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2635" class="link-to-monster">Elusive Thara Frog</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>40</td>
+					<td>Fish</td>
+					<td>
+						<em>Water</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2862" class="link-to-monster">2862</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2862" class="link-to-monster">Elusive Zhu Po Long</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>102</td>
+					<td>Dragon</td>
+					<td>
+						<em>Wind</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2836" class="link-to-monster">2836</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2836" class="link-to-monster">Fabre Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>6</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2831" class="link-to-monster">2831</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2831" class="link-to-monster">Freezer Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>94</td>
+					<td>Brute</td>
+					<td>
+						<em>Water</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2899" class="link-to-monster">2899</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2899" class="link-to-monster">Furious Anolian</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>109</td>
+					<td>Fish</td>
+					<td>
+						<em>Water</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2890" class="link-to-monster">2890</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2890" class="link-to-monster">Furious Argos</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>47</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Wind</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2856" class="link-to-monster">2856</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2856" class="link-to-monster">Furious Baby Desert Wol</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>14</td>
+					<td>Brute</td>
+					<td>
+						<em>Fire</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2885" class="link-to-monster">2885</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2885" class="link-to-monster">Furious Bathory</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>86</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Dark</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2787" class="link-to-monster">2787</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2787" class="link-to-monster">Furious Beetle King</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>55</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2871" class="link-to-monster">2871</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2871" class="link-to-monster">Furious Clock</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>81</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2851" class="link-to-monster">2851</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2851" class="link-to-monster">Furious Dokebi</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>68</td>
+					<td>Demon</td>
+					<td>
+						<em>Dark</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2846" class="link-to-monster">2846</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2846" class="link-to-monster">Furious Driller</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>65</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2842" class="link-to-monster">2842</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2842" class="link-to-monster">Furious Dustiness</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>62</td>
+					<td>Insect</td>
+					<td>
+						<em>Wind</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2827" class="link-to-monster">2827</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2827" class="link-to-monster">Furious Gargoyle</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>100</td>
+					<td>Demon</td>
+					<td>
+						<em>Wind</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2812" class="link-to-monster">2812</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2812" class="link-to-monster">Furious Golem</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>61</td>
+					<td>Formless</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2772" class="link-to-monster">2772</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2772" class="link-to-monster">Furious Lude</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>101</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2767" class="link-to-monster">2767</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2767" class="link-to-monster">Furious Majoruros</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>107</td>
+					<td>Brute</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2762" class="link-to-monster">2762</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2762" class="link-to-monster">Furious Marin</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>37</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2757" class="link-to-monster">2757</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2757" class="link-to-monster">Furious Merman</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>60</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Water</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2737" class="link-to-monster">2737</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2737" class="link-to-monster">Furious Myst Case</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>39</td>
+					<td>Formless</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2722" class="link-to-monster">2722</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2722" class="link-to-monster">Furious Orc Warrior</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>44</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2717" class="link-to-monster">2717</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2717" class="link-to-monster">Furious Penomena</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>85</td>
+					<td>Fish</td>
+					<td>
+						<em>Poison</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2712" class="link-to-monster">2712</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2712" class="link-to-monster">Furious Picky</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>10</td>
+					<td>Brute</td>
+					<td>
+						<em>Fire</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2707" class="link-to-monster">2707</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2707" class="link-to-monster">Furious Plankton</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>40</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2697" class="link-to-monster">2697</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2697" class="link-to-monster">Furious Poring</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>1</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2679" class="link-to-monster">2679</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2679" class="link-to-monster">Furious Roda Frog</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>13</td>
+					<td>Fish</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2674" class="link-to-monster">2674</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2674" class="link-to-monster">Furious Sandman</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>61</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2664" class="link-to-monster">2664</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2664" class="link-to-monster">Furious Shinobi</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>108</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Fire</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2649" class="link-to-monster">2649</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2649" class="link-to-monster">Furious Soldier Skeleto</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>34</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2644" class="link-to-monster">2644</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2644" class="link-to-monster">Furious Stalactic Golem</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>68</td>
+					<td>Formless</td>
+					<td>
+						<em>Neutral</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2634" class="link-to-monster">2634</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2634" class="link-to-monster">Furious Thief Bug</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>21</td>
+					<td>Insect</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2620" class="link-to-monster">2620</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2620" class="link-to-monster">Furious Wanderer</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>120</td>
+					<td>Demon</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2616" class="link-to-monster">2616</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2616" class="link-to-monster">Furious Wild Rose</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>70</td>
+					<td>Brute</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2611" class="link-to-monster">2611</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2611" class="link-to-monster">Furious Wootan Fighter</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>67</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2606" class="link-to-monster">2606</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2606" class="link-to-monster">Furious Zombie</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>17</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2761" class="link-to-monster">2761</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2761" class="link-to-monster">Marionette Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>90</td>
+					<td>Demon</td>
+					<td>
+						<em>Ghost</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2746" class="link-to-monster">2746</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2746" class="link-to-monster">Miyabi Doll Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>105</td>
+					<td>Demon</td>
+					<td>
+						<em>Dark</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2741" class="link-to-monster">2741</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2741" class="link-to-monster">Muka Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>23</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2696" class="link-to-monster">2696</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2696" class="link-to-monster">Poring Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>1</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2678" class="link-to-monster">2678</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2678" class="link-to-monster">Roda Frog Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>13</td>
+					<td>Fish</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2673" class="link-to-monster">2673</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2673" class="link-to-monster">Savage Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>59</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2668" class="link-to-monster">2668</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2668" class="link-to-monster">Sea Otter Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>48</td>
+					<td>Brute</td>
+					<td>
+						<em>Water</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2663" class="link-to-monster">2663</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2663" class="link-to-monster">Side Winder Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>70</td>
+					<td>Brute</td>
+					<td>
+						<em>Poison</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2648" class="link-to-monster">2648</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2648" class="link-to-monster">Soldier Skeleton Ringle</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>34</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2907" class="link-to-monster">2907</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2907" class="link-to-monster">Solid Alligator</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>57</td>
+					<td>Brute</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2902" class="link-to-monster">2902</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2902" class="link-to-monster">Solid Andre</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>33</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2893" class="link-to-monster">2893</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2893" class="link-to-monster">Solid Arclouze</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>107</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2869" class="link-to-monster">2869</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2869" class="link-to-monster">Solid Coco</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>38</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2864" class="link-to-monster">2864</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2864" class="link-to-monster">Solid Cornutus</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>48</td>
+					<td>Fish</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2840" class="link-to-monster">2840</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2840" class="link-to-monster">Solid Elder Willow</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>34</td>
+					<td>Plant</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2835" class="link-to-monster">2835</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2835" class="link-to-monster">Solid Fabre</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>6</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2805" class="link-to-monster">2805</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2805" class="link-to-monster">Solid High Orc</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>81</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2800" class="link-to-monster">2800</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2800" class="link-to-monster">Solid Horn</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>32</td>
+					<td>Insect</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2790" class="link-to-monster">2790</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2790" class="link-to-monster">Solid Isis</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>59</td>
+					<td>Demon</td>
+					<td>
+						<em>Dark</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2765" class="link-to-monster">2765</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2765" class="link-to-monster">Solid Mandragora</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>13</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2760" class="link-to-monster">2760</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2760" class="link-to-monster">Solid Martin</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>39</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2740" class="link-to-monster">2740</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2740" class="link-to-monster">Solid Mummy</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>55</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2725" class="link-to-monster">2725</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2725" class="link-to-monster">Solid Orc Lady</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>45</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2720" class="link-to-monster">2720</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2720" class="link-to-monster">Solid Parasite</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>76</td>
+					<td>Plant</td>
+					<td>
+						<em>Wind</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2715" class="link-to-monster">2715</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2715" class="link-to-monster">Solid Petite</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>86</td>
+					<td>Dragon</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2705" class="link-to-monster">2705</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2705" class="link-to-monster">Solid Poison Spore</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>26</td>
+					<td>Plant</td>
+					<td>
+						<em>Poison</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2687" class="link-to-monster">2687</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2687" class="link-to-monster">Solid Requiem</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>71</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Dark</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2682" class="link-to-monster">2682</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2682" class="link-to-monster">Solid Rideword</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>74</td>
+					<td>Formless</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2647" class="link-to-monster">2647</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2647" class="link-to-monster">Solid Solider</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>92</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2642" class="link-to-monster">2642</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2642" class="link-to-monster">Solid Steel Chonchon</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>48</td>
+					<td>Insect</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2632" class="link-to-monster">2632</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2632" class="link-to-monster">Solid Thief Bug</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>21</td>
+					<td>Insect</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2628" class="link-to-monster">2628</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2628" class="link-to-monster">Solid Vadon</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>45</td>
+					<td>Fish</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2618" class="link-to-monster">2618</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2618" class="link-to-monster">Solid Whisper</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>46</td>
+					<td>Demon</td>
+					<td>
+						<em>Ghost</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2604" class="link-to-monster">2604</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2604" class="link-to-monster">Solid Zombie Prisoner</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>89</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2892" class="link-to-monster">2892</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2892" class="link-to-monster">Swift Argiope</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>75</td>
+					<td>Insect</td>
+					<td>
+						<em>Poison</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2878" class="link-to-monster">2878</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2878" class="link-to-monster">Swift Caramel</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>25</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2863" class="link-to-monster">2863</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2863" class="link-to-monster">Swift Creamy</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>23</td>
+					<td>Insect</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2848" class="link-to-monster">2848</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2848" class="link-to-monster">Swift Dragon Tail</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>86</td>
+					<td>Insect</td>
+					<td>
+						<em>Wind</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2843" class="link-to-monster">2843</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2843" class="link-to-monster">Swift Dryad</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>68</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2839" class="link-to-monster">2839</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2839" class="link-to-monster">Swift Elder Willow</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>34</td>
+					<td>Plant</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2814" class="link-to-monster">2814</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2814" class="link-to-monster">Swift Goblin</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>48</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2809" class="link-to-monster">2809</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2809" class="link-to-monster">Swift Greatest General</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>55</td>
+					<td>Formless</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2789" class="link-to-monster">2789</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2789" class="link-to-monster">Swift Karakasa</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>100</td>
+					<td>Formless</td>
+					<td>
+						<em>Neutral</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2774" class="link-to-monster">2774</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2774" class="link-to-monster">Swift Loli Ruri</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>109</td>
+					<td>Demon</td>
+					<td>
+						<em>Dark</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2759" class="link-to-monster">2759</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2759" class="link-to-monster">Swift Medusa</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>102</td>
+					<td>Demon</td>
+					<td>
+						<em>Neutral</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2754" class="link-to-monster">2754</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2754" class="link-to-monster">Swift Metaller</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>55</td>
+					<td>Insect</td>
+					<td>
+						<em>Fire</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2749" class="link-to-monster">2749</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2749" class="link-to-monster">Swift Minorous</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>58</td>
+					<td>Brute</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2739" class="link-to-monster">2739</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2739" class="link-to-monster">Swift Mummy</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>55</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2724" class="link-to-monster">2724</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2724" class="link-to-monster">Swift Orc Skeleton</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>53</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2719" class="link-to-monster">2719</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2719" class="link-to-monster">Swift Pasana</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>79</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2714" class="link-to-monster">2714</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2714" class="link-to-monster">Swift Petite</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>86</td>
+					<td>Dragon</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2704" class="link-to-monster">2704</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2704" class="link-to-monster">Swift Poisonous Toad</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>105</td>
+					<td>Brute</td>
+					<td>
+						<em>Poison</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2699" class="link-to-monster">2699</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2699" class="link-to-monster">Swift Poring</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>1</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2676" class="link-to-monster">2676</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2676" class="link-to-monster">Swift Sailor Skeleton</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>19</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2671" class="link-to-monster">2671</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2671" class="link-to-monster">Swift Savage Babe</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>14</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2829" class="link-to-monster">2829</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2829" class="link-to-monster">Swift Seal</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>47</td>
+					<td>Brute</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2651" class="link-to-monster">2651</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2651" class="link-to-monster">Swift Sohee</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>64</td>
+					<td>Demon</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2646" class="link-to-monster">2646</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2646" class="link-to-monster">Swift Spore</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>18</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2613" class="link-to-monster">2613</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2613" class="link-to-monster">Swift Wolf</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>45</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2608" class="link-to-monster">2608</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2608" class="link-to-monster">Swift Yoyo</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>38</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2638" class="link-to-monster">2638</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2638" class="link-to-monster">Tarou Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>22</td>
+					<td>Brute</td>
+					<td>
+						<em>Dark</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2615" class="link-to-monster">2615</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2615" class="link-to-monster">Willow Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>8</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2796" class="link-to-monster">2796</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2796" class="link-to-monster">Yao Jun Ringleader</a>
+					</td>
+					<td>
+						<strong>5%</strong>
+											</td>
+					<td>107</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=2861" class="link-to-monster">2861</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=2861" class="link-to-monster">Furious Dark Priest</a>
+					</td>
+					<td>
+						<strong>3%</strong>
+											</td>
+					<td>98</td>
+					<td>Demon</td>
+					<td>
+						<em>Undead</em>
+						4
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3951" class="link-to-monster">3951</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3951" class="link-to-monster">Dark High Orc</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>72</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Fire</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20102" class="link-to-monster">20102</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20102" class="link-to-monster">Dark Mandragora</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>39</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3952" class="link-to-monster">3952</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3952" class="link-to-monster">Dark Orc Archer</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>69</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3950" class="link-to-monster">3950</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3950" class="link-to-monster">Dark Orc Baby</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>63</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3949" class="link-to-monster">3949</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3949" class="link-to-monster">Dark Orc Lady</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>67</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3948" class="link-to-monster">3948</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3948" class="link-to-monster">Dark Orc Warrior</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>68</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20104" class="link-to-monster">20104</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20104" class="link-to-monster">Dark Spore</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>44</td>
+					<td>Plant</td>
+					<td>
+						<em>Water</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20103" class="link-to-monster">20103</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20103" class="link-to-monster">Dark Stem Worm</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>43</td>
+					<td>Plant</td>
+					<td>
+						<em>Wind</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20101" class="link-to-monster">20101</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20101" class="link-to-monster">Dark Willow</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>38</td>
+					<td>Plant</td>
+					<td>
+						<em>Earth</em>
+						1
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3965" class="link-to-monster">3965</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3965" class="link-to-monster">Desert Frilldora</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>69</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3967" class="link-to-monster">3967</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3967" class="link-to-monster">Desert Hode</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>65</td>
+					<td>Brute</td>
+					<td>
+						<em>Earth</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=3966" class="link-to-monster">3966</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=3966" class="link-to-monster">Desert Sandman</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>71</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20166" class="link-to-monster">20166</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20166" class="link-to-monster">Flame Ghost</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>107</td>
+					<td>Demon</td>
+					<td>
+						<em>Fire</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20167" class="link-to-monster">20167</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20167" class="link-to-monster">Ice Ghost</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>105</td>
+					<td>Demon</td>
+					<td>
+						<em>Water</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20174" class="link-to-monster">20174</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20174" class="link-to-monster">Prison Breaker</a>
+					</td>
+					<td>
+						<strong>0.15%</strong>
+											</td>
+					<td>109</td>
+					<td>Undead</td>
+					<td>
+						<em>Undead</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20170" class="link-to-monster">20170</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20170" class="link-to-monster">Contaminated Gargoyle</a>
+					</td>
+					<td>
+						<strong>0.09%</strong>
+											</td>
+					<td>105</td>
+					<td>Demon</td>
+					<td>
+						<em>Water</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20173" class="link-to-monster">20173</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20173" class="link-to-monster">Contaminated Raydric Ar</a>
+					</td>
+					<td>
+						<strong>0.09%</strong>
+											</td>
+					<td>105</td>
+					<td>Demon</td>
+					<td>
+						<em>Dark</em>
+						2
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20171" class="link-to-monster">20171</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20171" class="link-to-monster">Contaminated Sting</a>
+					</td>
+					<td>
+						<strong>0.09%</strong>
+											</td>
+					<td>109</td>
+					<td>Formless</td>
+					<td>
+						<em>Earth</em>
+						3
+					</td>
+				</tr>
+								<tr>
+					<td>
+						<a href="/monster/view/?id=20172" class="link-to-monster">20172</a>
+					</td>
+					<td>
+						<a href="/monster/view/?id=20172" class="link-to-monster">Contaminated Raydric</a>
+					</td>
+					<td>
+						<strong>0.03%</strong>
+											</td>
+					<td>120</td>
+					<td>Demi-Human</td>
+					<td>
+						<em>Dark</em>
+						2
+					</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+</div>
+
+	</div></div><!--/.main-->
+</div><!--/.row-->
+</div><!--/.container-->
+
+<footer class="footer">
+	<div class="container">
+			<div class="row">
+			<p>
+				<a href="https://playragnarokzero.com/tos">Terms of Service</a> - <a href="https://playragnarokzero.com/privacy-policy">Privacy Policy</a> - <a href="https://playragnarokzero.com/cookie-policy">Cookie Policy</a> - <a href="https://playragnarokzero.com/refund-policy">Refund Policy</a> - <a href="https://playragnarokzero.com/contact-us">Contact us</a>
+			</p>
+			<!--
+			<p class="text-muted">
+				<strong>Ragnarok: Project Zero Control Panel</strong>
+				&mdash; Copyright &copy; 2020 Ragnarok: Project Zero
+				&mdash; Based on <a href="https://github.com/HerculesWS/FluxCP">FluxCP</a> for <a href="https://github.com/HerculesWS/Hercules">Hercules</a>.<br/>
+			</p>-->
+		</div>
+	</footer>
+
+<script type="text/javascript" src="/themes/origins/js/jquery.min.js?v=3.2.1"></script>
+<script type="text/javascript" src="/themes/origins/js/bootstrap.min.js?v=3.3.7"></script>
+<script type="text/javascript" src="/themes/origins/js/moment.min.js?v=2.17.1"></script>
+<script type="text/javascript" src="/themes/origins/js/bootstrap-datetimepicker.min.js?v=4.17.47"></script>
+<script type="text/javascript" src="/themes/origins/js/originsrocp.js?v=20170115"></script>
+<script type="text/javascript">
+//<![CDATA[
+	function reload(){
+		window.location.href = '/item/view/';
+	}
+	function updatePreferredServer(sel){
+		var preferred = sel.options[sel.selectedIndex].value;
+		document.preferred_server_form.preferred_server.value = preferred;
+		document.preferred_server_form.submit();
+	}
+
+	function toggleSearchForm()
+	{
+		//$('.search-form').toggle();
+		$('.search-form').slideToggle('fast');
+		$('.searchform-toggle').toggleClass('active');
+	}
+	$(function() {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+//]]>
+</script>
+</body>
+</html>
